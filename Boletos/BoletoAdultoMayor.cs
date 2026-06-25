@@ -4,17 +4,14 @@
     {
         public string NumCredencialInapam { get; set; }
 
-        public BoletoAdultoMayor(string numCredencialInapam)
+        public BoletoAdultoMayor(float precioB, string numCrede) : base(precioB)
         {
-            NumCredencialInapam = numCredencialInapam;
+            this.NumCredencialInapam = numCredencial;
         }
 
-        public override double CalcularPrecioFinal()
+        public override float CalcularPrecioFinal()
         {
-            double descuento = PrecioBase * 0.50;
-            double precioFinal = PrecioBase - descuento;
-
-            return precioFinal;
+            return this.precioBoleto + 0.5f;
         }
     }
 }
