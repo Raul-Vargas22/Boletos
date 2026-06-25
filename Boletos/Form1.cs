@@ -61,7 +61,7 @@ namespace Boletos
             }
             else if (cmbTipoBoleto.Text == "General")
             {
-                // Aquí va BoletoGeneral
+                boleto = new BoletoGeneral();
             }
             else
             {
