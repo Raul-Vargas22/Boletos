@@ -53,7 +53,7 @@ namespace Boletos
 
             if (cmbTipoBoleto.Text == "Estudiante")
             {
-                // Aquí va BoletoEstudiante
+                boleto = new BoletoEstudiante(txtDato.Text);
             }
             else if (cmbTipoBoleto.Text == "Adulto Mayor")
             {
